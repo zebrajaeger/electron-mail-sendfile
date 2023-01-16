@@ -1,0 +1,8 @@
+node_modules
+dist
+out
+*.log*
+credentials.json
+.idea
+.vscode
+build

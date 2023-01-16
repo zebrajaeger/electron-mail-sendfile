@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Hello World!</title>
+  <meta http-equiv="Content-Security-Policy"
+        content="script-src 'self' 'unsafe-inline';"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h3>Drag and Drop Files in the Window.</h3>
+<div class="maildata">
+
+<label for="subject"> Subject</label>
+<input type="text" class="maildata-field" id="subject" name="subject">
+<label for="email">  Email</label>
+<input type="email" class="maildata-field" id="email" name="email">
+</div>
+<div class="send--and--state">
+  <button class="send" onclick="send()">Send</button>
+  <span class="current">-</span>/<span class="count">-</span>
+  <span class="info">-</span>
+</div>
+
+<ul class="files">
+</ul>
+
+<!-- Adding Individual Renderer Process JS File -->
+<script src="jquery-3.6.3.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
